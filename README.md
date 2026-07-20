@@ -9,7 +9,7 @@
 
 ## 快速开始
 
-1. 下载 Skill → [GitHub Releases](https://github.com/paperpoon-lang/trusted-retrieval-skills/releases) <!-- 链接待建 -->
+1. 下载 Skill → [GitHub Releases](https://github.com/paperpoon-lang/trusted-retrieval-skills/releases)
 2. 放入 Agent 的 `skills/` 目录
 3. 直接问：「中国 2024 年总人口」、「日本 TFR」
 
