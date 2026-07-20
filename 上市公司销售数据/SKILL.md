@@ -112,12 +112,14 @@ description: 检索上市公司营业收入/销售收入数据。当用户询问
 
 | 需求类型 | A 股关键词 | 港股关键词 | 美股关键词 |
 |----------|-----------|-----------|-----------|
-| 最新年度营收 | `[公司简称] [年份] 年报 营业收入` | `[Stock Code] [Year] Annual Report revenue` | `[Ticker] (10-K OR 20-F) [Year] revenue` |
-| 季度营收 | `[公司简称] [年份] [季报] 营业收入` | `[Stock Code] [Year] Interim Report` | `[Ticker] 10-Q [Quarter]` |
-| 业绩快报 | `[公司简称] [年份] 业绩快报` | `[Stock Code] [Year] profit warning` | `[Ticker] 8-K earnings release` |
+| 最新年度营收 | `[公司简称] [年份] 年报 营业收入` | `[Stock Code] [Year] Annual Report revenue` 或 `[股票代碼] [年份] 年度報告 收益` | `[Ticker] (10-K OR 20-F) [Year] revenue` |
+| 业绩公告（年度） | — | `[股票代碼] [年份] 業績公告 收益` | — |
+| 季度营收 | `[公司简称] [年份] [季报] 营业收入` | `[Stock Code] [Year] Interim Report` 或 `[股票代碼] [年份] 中期報告` | `[Ticker] 10-Q [Quarter]` |
+| 业绩快报 | `[公司简称] [年份] 业绩快报` | `[Stock Code] [Year] profit warning` 或 `[股票代碼] [年份] 盈警` | `[Ticker] 8-K earnings release` |
 | 财年口径确认 | `[公司简称] 财年 截止` | `[Company] fiscal year end` | `[Company] fiscal year end` |
 
 > **搜索策略**：优先使用目标公司证券代码或股票代码，避免简称模糊匹配到无关公司。
+> **本地化提示**：检索港股时，优先使用繁体中文关键词（披露易平台上的文件标题多数为繁体中文），英文关键词作为补充——与人口 Skill 中「日本用『人口推計』」同义。
 
 ### 第五步：并行检索
 
