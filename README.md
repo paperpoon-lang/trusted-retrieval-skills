@@ -44,7 +44,7 @@
 flowchart TD
     Q([用户数据需求]) --> A
 
-    subgraph ground["地基层 — 搜索规划 ↔ 信源约束 互锁"]
+    subgraph ground["地基层"]
         direction LR
         A[搜索规划] <-->|互锁| B[信源约束]
     end
@@ -90,7 +90,6 @@ flowchart TD
         B2[审计分层：已审计>未经审计>初步]
         B3[归因信源：法定披露/审计/第三方观点<br/>只解释差异·不提供数字]
         B1 --> B2
-        B1 -.-> B3
     end
 
     S1 <-->|互锁| S2
