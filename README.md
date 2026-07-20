@@ -151,7 +151,7 @@ flowchart TD
 | **Agentic RAG 企业指南** | Plan→Retrieve→Act→Reflect→Cite 核心循环 | Reflect →「自检反思」模块 |
 | **Anthropic skill-creator** | 写 Skill 的方法论：意图→草稿→测试→迭代 | 完整工作流：设计→编写→测试→多轮迭代 |
 | **Anthropic Financial Services** | SEC Filings 字段映射表（Revenue↔Net Sales↔营业收入） | 借鉴为搜索规划的「字段名对照」表 |
-| **沙利文 Agent GSR** | 门控补充检索（ReAct 工程化变体） | 直接复用为「补搜机制」，解绑沙利文特定管线 |
+| **Agent GSR** | 门控补充检索（ReAct 工程化变体） | 直接复用为「补搜机制」，解绑沙利文特定管线 |
 | **学术信息素养（三角验证）** | 至少三个独立可信来源交叉验证 | 借鉴为「至少 2 个独立信源」+ 独立性判定 |
 
 ---
